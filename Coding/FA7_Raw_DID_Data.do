@@ -1,6 +1,6 @@
 * This do file imitates Figure A7 in Miller (2023)
 * Author: Ian He
-* Date: Jun 28, 2023
+* Date: Jun 29, 2023
 * Stata Version: 18
 
 clear all
@@ -137,4 +137,4 @@ graph twoway (connected estimate actual etime, msize(medium medium) msymbol(o oh
 	name(te, replace)
 
 graph combine te raw_mean, xsize(8) ysize(4) title("Getting Close to Raw DID Data")
-graph export "$figdir/Close_to_Raw_DID_Data.png", replace
+graph export "$figdir/Close_to_Raw_DID_Data.svg", replace
