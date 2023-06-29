@@ -1,6 +1,6 @@
 * This do file imitates Figure A10 in Miller (2023)
 * Author: Ian He
-* Date: Jun 28, 2023
+* Date: Jun 29, 2023
 * Stata Version: 18
 
 clear all
@@ -179,4 +179,4 @@ grc1leg model1 model2 model3 model4, ///
 	legendfrom(model1) cols(2) ///
 	name(spline, replace)
 
-graph export "$figdir\Splines_Event_Study.png", replace
+graph export "$figdir\Splines_Event_Study.svg", replace
