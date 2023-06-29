@@ -1,6 +1,6 @@
 * This do file imitates Figure A16 in Miller (2023).
 * Author: Ian He
-* Date: Jun 28, 2023
+* Date: Jun 29, 2023
 * Stata Version: 18
 
 clear all
@@ -130,4 +130,4 @@ graph twoway (connected ES actual etime, msize(medlarge medlarge) msymbol(o oh) 
 	xtitle("Event Time") xlab(, nogrid) ///
 	legend(order(1 "Event study" 3 "DID with no trends control" 2 "Actual effects" 4 "DID with trends control") rows(2) size(*0.8) span position(6) region(lc(black)))
 
-graph export "$figdir/ES_vs_StaticDID.png", replace
+graph export "$figdir/ES_vs_StaticDID.svg", replace
