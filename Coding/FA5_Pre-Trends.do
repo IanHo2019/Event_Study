@@ -1,6 +1,6 @@
 * This do file imitates Figure A5 in Miller (2023)
 * Author: Ian He
-* Date: Jun 28, 2023
+* Date: Jun 29, 2023
 * Stata Version: 18
 
 clear all
@@ -130,4 +130,4 @@ grc1leg cn1 cn2, ///
 	legendfrom(cn1) rows(1) name(cn, replace)
 gr draw cn, xsize(8) ysize(4)
 
-graph export "$figdir/Pretrends_in_Counterfactual_Normalizations.png", replace
+graph export "$figdir/Pretrends_in_Counterfactual_Normalizations.svg", replace
