@@ -1,6 +1,6 @@
 * This do file replicates Figure A2 in Miller (2023)
 * Author: Ian He
-* Date: Jun 28, 2023
+* Date: Jun 29, 2023
 * Stata Version: 18
 
 clear all
@@ -81,4 +81,4 @@ twoway (line cumul E_i, lc(navy) lwidth(medthick)), ///
 * Combining panels
 graph combine dist_A dist_B, iscale(0.6)
 
-graph export "$figdir/Variation_in_Event_Dates.png", replace
+graph export "$figdir/Variation_in_Event_Dates.svg", replace
