@@ -49,7 +49,7 @@ Something important is that when using a longer reference period, we should **as
 
 <img src="./Figures/Pretrends_in_Counterfactual_Normalizations.svg" title="Different Counterfactual Normalizations and Pre-Trends" alt="Different Counterfactual Normalizations and Pre-Trends" style="width:100%"/>
 
-More multicollinearities can be found between panel fixed effects and even-time dummies. The sum of the unit dummies is equal to one, and the sum of the calendar-time dummies is equal to one. Thus, there is a multicollinearity between these two sets of dummies as well as the intercept. Typically we drop one from each set. In addition, there is a multicollinearity between the event-time dummies $D_{i,t-j}$ and the unit and calendar-time dummies.
+More multicollinearities can be found between panel fixed effects and event-time dummies. The sum of the unit dummies is equal to one, and the sum of the calendar-time dummies is equal to one. Thus, there is a multicollinearity between these two sets of dummies as well as the intercept. Typically we drop one from each set. In addition, there is a multicollinearity between the event-time dummies $D_{i,t-j}$ and the unit and calendar-time dummies.
 
 Anyway, with a model in which multicollinearities abound, we must add some restrictions on the parameters to proceed. To learn details about multicollinearities in event study models, [Miller (2023)](https://doi.org/10.1257/jep.37.2.203) recommends a Stata built-in command: `cnsreg`.
   * When using this command, we have to manually specify the parameter restrictions through the `constraints( )` option.
