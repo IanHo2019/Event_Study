@@ -76,8 +76,7 @@ constraint define 3 D_pre10 + D_pre9 + D_pre8 + D_pre7 + D_pre6 + D_pre5 + D_pre
 cnsreg y D_pre* D_post* ibn.t ibn.i, nocons vce(cluster i) constraints(1 2) collinear
 parmest, saving("$figdir\counterfactual_normalization1.dta", replace)
 
-cnsreg y D_pre* D_post* ibn.t ibn.i, ///
-	nocons vce(cluster i) constraints(2 3) collinear
+cnsreg y D_pre* D_post* ibn.t ibn.i, nocons vce(cluster i) constraints(2 3) collinear
 parmest, saving("$figdir\counterfactual_normalization2.dta", replace)
 
 
